@@ -15,7 +15,8 @@
    + 셸 정렬 Shell Sort
    + 퀵 정렬 Quick Sort
    + 힙 정렬 Heap Sort
-   + 위상 정렬 Toplogical Sort
+   + 위상 정렬 Toplogical Sort  
+   
  * 최단 경로 Shortest Path
    + Dijkstra 알고리즘
    + Floyd 알고리즘
