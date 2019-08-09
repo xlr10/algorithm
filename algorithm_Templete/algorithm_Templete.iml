@@ -7,6 +7,9 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="algorithm_Templete" />
+    <orderEntry type="module" module-name="bubble_sort" />
+    <orderEntry type="module" module-name="insert_sort" />
+    <orderEntry type="module" module-name="merge_sort" />
+    <orderEntry type="module" module-name="selection_sort" />
   </component>
 </module>

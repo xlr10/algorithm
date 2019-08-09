@@ -1,15 +1,14 @@
-package selection_sort;
+package bubble_sort;
 
 import algorithm_Templete.algorithm_Templete;
 
 import java.util.Collections;
 import java.util.List;
 
-public class selection_sort<T> extends algorithm_Templete {
+public class bubble_sort<T> extends algorithm_Templete {
 
-    public selection_sort() {
-        //System.out.println(">>>> Selection Sort (ascending order)");
-        print_templete("Selection Sort");
+    public bubble_sort() {
+        print_templete("Bubble Sort");
     }
 
     @Override
@@ -19,8 +18,8 @@ public class selection_sort<T> extends algorithm_Templete {
         print_target(target);
 
         for (int a = 0; a < target.size(); a++) {
-            for (int b = a; b < target.size(); b++) {
-                if ((Integer) target.get(a) > (Integer) target.get(b)) Collections.swap(target, a, b);
+            for (int b = 1; b < target.size() - a; b++) {
+                if ((Integer) target.get(b) < (Integer) target.get(b - 1)) Collections.swap(target, b, b - 1);
             }
         }
 
