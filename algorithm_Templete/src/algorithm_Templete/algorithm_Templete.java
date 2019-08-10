@@ -5,9 +5,14 @@ import java.util.List;
 import java.util.Random;
 
 public class algorithm_Templete<T extends Number> {
+    private long start;
+    private long end;
+    protected int cnt;
+    protected int bound;
 
-    public void print_target(List<T> list) {
-        for (T a : list) {
+
+    public void print_target(List list) {
+        for (Object a : list) {
             System.out.print(a + " ");
         }
         System.out.println();
@@ -25,15 +30,25 @@ public class algorithm_Templete<T extends Number> {
         for (int a = 0; a < cnt; a++) {
             tmp.add((Object) random.nextInt(bound));
         }
+        System.out.println("Before sort");
+        print_target(tmp);
         return tmp;
     }
 
-    public void run(int cnt, int bound) {
+    public void run() {
+        start_time();
+        algorithm();
+        end_time();
+    }
+    public void algorithm(){
+        //algorithm here
     }
 
-    public void running_time() {
-        long start = System.currentTimeMillis();  //시작시간
-        long end = System.currentTimeMillis();  //종료시간
+    private void start_time() {
+        start = System.currentTimeMillis();  //시작시간
+    }
+    private void end_time() {
+        end = System.currentTimeMillis();  //종료시간
         System.out.println("running time: " + (long) (end - start) / 1000.0 + "s");
     }
 

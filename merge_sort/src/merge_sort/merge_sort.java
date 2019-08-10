@@ -9,8 +9,20 @@ public class merge_sort extends algorithm_Templete{
     //1. 재귀
     //2. 링크드 리스트
 
-    public merge_sort() {
+    public merge_sort(int cnt, int bound) {
         print_templete("Merge Sort");
+        this.cnt=cnt;
+        this.bound=bound;
+    }
+
+    @Override
+    public void algorithm() {
+        List<Integer> target = make_list(cnt, bound);
+
+        devide_list(target, 0, target.size()-1);
+
+        System.out.println("Atfer sort");
+        print_target(target);
     }
 
     private void devide_list(List<Integer> list, int left, int right){
@@ -51,28 +63,5 @@ public class merge_sort extends algorithm_Templete{
             list.set(a, tmp.get(a - left));
         }
         //System.out.println();
-    }
-
-    private void print_arrlist(ArrayList<Integer> tmp){
-        Iterator iterator=tmp.iterator();
-        System.out.print("tmp>>");
-        while (iterator.hasNext()){
-            System.out.print(iterator.next()+" ");
-        }
-        System.out.println();
-    }
-
-
-    @Override
-    public void run(int cnt, int bound) {
-        List<Integer> target = make_list(cnt, bound);
-        System.out.println("Before sort");
-        print_target(target);
-
-        devide_list(target, 0, target.size()-1);
-
-        System.out.println("Atfer sort");
-        print_target(target);
-        System.out.println();
     }
 }
