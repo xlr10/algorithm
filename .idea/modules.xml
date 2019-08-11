@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/algorithm.iml" filepath="$PROJECT_DIR$/algorithm.iml" />
       <module fileurl="file://$PROJECT_DIR$/algorithm_Templete/algorithm_Templete.iml" filepath="$PROJECT_DIR$/algorithm_Templete/algorithm_Templete.iml" />
       <module fileurl="file://$PROJECT_DIR$/bubble_sort/bubble_sort.iml" filepath="$PROJECT_DIR$/bubble_sort/bubble_sort.iml" />
+      <module fileurl="file://$PROJECT_DIR$/heap_sort/heap_sort.iml" filepath="$PROJECT_DIR$/heap_sort/heap_sort.iml" />
       <module fileurl="file://$PROJECT_DIR$/insert_sort/insert_sort.iml" filepath="$PROJECT_DIR$/insert_sort/insert_sort.iml" />
       <module fileurl="file://$PROJECT_DIR$/merge_sort/merge_sort.iml" filepath="$PROJECT_DIR$/merge_sort/merge_sort.iml" />
       <module fileurl="file://$PROJECT_DIR$/quick_sort/quick_sort.iml" filepath="$PROJECT_DIR$/quick_sort/quick_sort.iml" />
