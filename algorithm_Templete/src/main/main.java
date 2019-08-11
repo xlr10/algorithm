@@ -3,8 +3,12 @@ package main;
 import bubble_sort.bubble_sort;
 import insert_sort.insert_sort;
 import merge_sort.merge_sort;
+import quick_sort.quick_sort;
 import selection_sort.selection_sort;
 import shell_sort.shell_sort;
+
+import java.util.Arrays;
+import java.util.Random;
 
 
 public class main {
@@ -40,6 +44,9 @@ public class main {
         shell_sort.run();
         System.out.println();
 
+        quick_sort<Integer> quick_sort=new quick_sort<Integer>(cnt,bound);
+        quick_sort.run();
+        System.out.println();
 
 
     }
