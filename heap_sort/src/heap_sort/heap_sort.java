@@ -29,8 +29,6 @@ public class heap_sort <T> extends algorithm_Templete{
     }
 
 
-
-
     private int[] make_heap_ascending(List<Integer> target){
         int []tmp=new int[cnt+1];   //index:0 not use
 
@@ -57,17 +55,19 @@ public class heap_sort <T> extends algorithm_Templete{
 
             //마지막 노드를 root로 이동후 재정렬
             for(int a=2,now=1;a<=end ;a*=2){
-                if(target[a] < target[a+1] && target[a+1]!=0) {
-                    if(target[now] >target[a]){
-                        swap_arr(target,now,a);
-                        now=a;
-                    }else break;
-                }else {
-                    if(target[now] > target[a+1] && target[a+1]!=0){
-                        swap_arr(target,now,a+1);
-                        now=a+1;
-                        a++;
-                    }else break;
+                if(target[a+1]!=0){
+                    if(target[a] < target[a+1]) {
+                        if(target[now] >target[a]){
+                            swap_arr(target,now,a);
+                            now=a;
+                        }else  break;
+                    }else{
+                        if(target[now] > target[a+1]){
+                            swap_arr(target,now,a+1);
+                            now=a+1;
+                            a++;
+                        }else  break;
+                    }
                 }
             }
         }
@@ -87,4 +87,5 @@ public class heap_sort <T> extends algorithm_Templete{
         }
         System.out.println();
     }
+
 }
