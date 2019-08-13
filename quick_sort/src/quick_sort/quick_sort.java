@@ -95,12 +95,6 @@ public class quick_sort<T> extends algorithm_Templete {
 //        return high;
 //    }
     public void Recursion_quick_sort(int[] target, int left, int right) {
-//        if(left<right){
-//            int pivot= Divide_quick_sort(target,left,right);
-//
-//            Recursion_quick_sort(target,left,pivot-1);
-//            Recursion_quick_sort(target,pivot+1,right);
-//        }
 
         int pivot=left;
         int j=pivot;

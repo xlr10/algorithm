@@ -23,4 +23,4 @@
 ---  
 
 **:book: 참조**
-> https://gmlwjd9405.github.io/2017/10/01/basic-concepts-of-development-algorithm.html
+> https://gmlwjd9405.github.io/2017/10/01/basic_01-concepts-of-development-algorithm.html
